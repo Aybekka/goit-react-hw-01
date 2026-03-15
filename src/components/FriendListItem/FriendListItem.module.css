@@ -1,0 +1,37 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  padding: 15px;
+  border: 1px solid #000000; /* Referans resimdeki belirgin siyah kenarlık */
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+
+.avatar {
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+.status {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.online {
+  composes: status;
+  color: #228b22; /* ForestGreen */
+}
+
+.offline {
+  composes: status;
+  color: #ff4500; /* OrangeRed */
+}
